@@ -20,7 +20,7 @@ require('anagram')
     end
     it("checks if both words are instead antigrams") do
       anagram = Anagram.new("work", "jump")
-      expect(anagram.anagram_checker).to(eq("No letter match, not an antigram"))
+      expect(anagram.antigram_checker).to(eq("No letter match, not an anagram"))
     end
     it("checks if multiple words or a phrase are anagrams or antigrams") do
       anagram = Anagram.new("wow coding is alot of fun")

@@ -23,12 +23,19 @@ class Anagram
   def palindromes_checker
     @word1 = @word1.downcase
     @word2 = @word2.downcase
-    if
-      @word1 == @word1.reverse && @word2 == @word2.reverse
+    if @word1 == @word1.reverse && @word2 == @word2.reverse
       return "This is also a palindrome"
     else
       return "This is an anagram"
     end
   end
 
+  def antigram_checker
+    @word1 = @word1.downcase.split("")
+    @word2 = @word2.downcase.split("")
+    match = @word1 & @word2
+    if match == []
+      return "No letter match, not an anagram"
+    end
+  end
 end
