@@ -5,8 +5,7 @@ class Anagram
   end
 
   def word_checker
-    if @word1 =~ /[aeiouy]/i && @word2 =~ /[aeiouy]/i
-    anagram_checker
+    if @word1 =~ /[aeiouy]/ && @word2 =~ /[aeiouy]/
     else
       return "Please enter a real word"
     end

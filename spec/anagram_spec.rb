@@ -4,7 +4,7 @@ require('anagram')
   describe('Anagram#anagram_checker') do
     it("checks that both words include vowels in order to be words") do
       anagram = Anagram.new("djfj", "jkjk")
-      expect(anagram.anagram_checker).to(eq("Please enter a real word"))
+      expect(anagram.word_checker).to(eq("Please enter a real word"))
     end
     it("takes two words and compares the characters to determine if they are anagrams") do
       anagram = Anagram.new("eat", "ate")
