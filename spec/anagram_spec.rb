@@ -15,8 +15,8 @@ require('anagram')
       expect(anagram.anagram_checker).to(eq("This is an anagram"))
     end
     it("checks if words are also palindromes regardless of case") do
-      anagram = Anagram.new("Anna", "anna")
-      expect(anagram.anagram_checker).to(eq("This is also a palindrome"))
+      anagram = Anagram.new("Anna", "racecar")
+      expect(anagram.palindromes_checker).to(eq("This is also a palindrome"))
     end
     it("checks if both words are instead antigrams") do
       anagram = Anagram.new("work", "jump")
