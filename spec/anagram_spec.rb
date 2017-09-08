@@ -2,6 +2,10 @@ require('rspec')
 require('anagram')
 
   describe('Anagram#anagram_checker') do
+    it("checks that both words include vowels in order to be words") do
+      anagram = Anagram.new("djfj", "jkjk")
+      expect(anagram.anagram_checker).to(eq("Please enter a real word"))
+    end
     it("takes two words and compares the characters to determine if they are anagrams") do
       anagram = Anagram.new("eat", "ate")
       expect(anagram.anagram_checker).to(eq("This is an anagram"))
@@ -13,10 +17,6 @@ require('anagram')
     it("checks if words are also palindromes regardless of case") do
       anagram = Anagram.new("Anna", "anna")
       expect(anagram.anagram_checker).to(eq("This is also a palindrome"))
-    end
-    it("checks that both words include vowels in order to be words") do
-      anagram = Anagram.new("djfj", "jkjk")
-      expect(anagram.anagram_checker).to(eq("Please enter a real word"))
     end
     it("checks if both words are instead antigrams") do
       anagram = Anagram.new("work", "jump")
