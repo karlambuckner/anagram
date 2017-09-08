@@ -6,6 +6,7 @@ class Anagram
 
   def word_checker
     if @word1 =~ /[aeiouy]/ && @word2 =~ /[aeiouy]/
+      anagram_checker
     else
       return "Please enter a real word"
     end
@@ -14,9 +15,11 @@ class Anagram
   def anagram_checker
     @word1 = @word1.downcase
     @word2 = @word2.downcase
-    result = @word1.length == @word2.length && @word1.delete(@word2).empty?
-    if result == true
+    outcome = @word1.length == @word2.length && @word1.delete(@word2).empty?
+    if outcome == true
       return "This is an anagram"
+    else
+      return "This is an antigram"
     end
   end
 
@@ -26,7 +29,7 @@ class Anagram
     if @word1 == @word1.reverse && @word2 == @word2.reverse
       return "This is also a palindrome"
     else
-      return "This is an anagram"
+      return "This is an antigram"
     end
   end
 
@@ -36,6 +39,8 @@ class Anagram
     match = @word1 & @word2
     if match == []
       return "No letter match, not an anagram"
+    else
+      return "This is an anagram"
     end
   end
 end
