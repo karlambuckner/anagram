@@ -19,7 +19,7 @@ class Anagram
     if outcome == true
       return "This is an anagram"
     else
-      return "This is an antigram"
+      return "This is not an anagram"
     end
   end
 
@@ -29,7 +29,7 @@ class Anagram
     if @word1 == @word1.reverse && @word2 == @word2.reverse
       return "This is also a palindrome"
     else
-      return "This is an antigram"
+      return "This is only an anagram"
     end
   end
 
@@ -40,7 +40,7 @@ class Anagram
     if match == []
       return "No letter match, not an anagram"
     else
-      return "This is an anagram"
+      return "This is an antigram"
     end
   end
 end

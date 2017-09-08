@@ -10,18 +10,23 @@ _This is a Ruby script for determining if two words are anagrams, palindromes or
 
 ## Specifications
 
-_1.Checks that both words include vowels in order to be words
+_1. Checks that both words include vowels in order to be words
   *Example input: ("hkjl", "fmlp" Example output: "Please enter a real word"
 2. Takes two words and compares the characters to determine if they are anagrams
-  *Example input: ("ate","eat") Example output: "This is an anagram"
+
+  Example input: ("ate","eat") Example output: "This is an anagram"
 3. Compares two words to determine an anagram regardless of case
-  *Example input: ("Rat", "tar")  Example output: "This is an anagram"
+
+  Example input: ("Rat", "tar")  Example output: "This is an anagram"
 4. Checks if words are also palindromes regardless of case
-  *Example input: ("Anna", "anna")  Example output: "This is also a palindrome"
+
+  Example input: ("Anna", "anna")  Example output: "This is also a palindrome"
 5. Checks if both words are instead antigrams
-  *Example input: ("work", "jump")  Example output: "No letter match, not an anagram"
+
+  Example input: ("work", "jump")  Example output: "No letter match, not an anagram"
 6. Checks if multiple words or a phrase are anagrams or antigrams
-  *Example input: "book worm", "cat love"  Example output: "This is an antigram"
+
+  Example input: "book worm", "cat love"  Example output: "This is an antigram"_
 
 ## Setup/Installation Requirements
 
