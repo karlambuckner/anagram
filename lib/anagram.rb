@@ -26,7 +26,7 @@ class Anagram
   def palindromes_checker
     @word1 = @word1.downcase
     @word2 = @word2.downcase
-    if @word1 == @word1.reverse && @word2 == @word2.reverse
+    if @word1 == @word1.reverse || @word2 == @word2.reverse
       return "This is also a palindrome"
     else
       return "This is only an anagram"

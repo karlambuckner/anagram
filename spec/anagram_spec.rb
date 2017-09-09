@@ -22,8 +22,8 @@ require('anagram')
       anagram = Anagram.new("Anna", "anna")
       expect(anagram.palindromes_checker).to(eq("This is also a palindrome"))
     end
-    it("checks if words are also palindromes") do
-      anagram = Anagram.new("cat" "act")
+    it("checks if anagram words are also palindromes") do
+      anagram = Anagram.new("tar", "rat")
       expect(anagram.palindromes_checker).to(eq("This is only an anagram"))
     end
     it("checks if a non-anagram is an antigram") do
